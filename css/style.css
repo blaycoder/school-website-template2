@@ -294,7 +294,72 @@ form input:focus, form textarea:focus {
     position: fixed;
     width: 100%;
     z-index: 1000;
-    border-top: 5px solid #c29e55;
+    /* border-top: 5px solid #c29e55; */
+}
+
+.top-header {
+    background-color: #2d186b;
+    padding-bottom: 1px;
+    overflow: hidden;
+    color: #ffffff;
+}
+.top-header-list {
+    list-style: none;
+	padding: 0;
+	margin: 0;
+	display: flex;
+	flex-wrap: wrap; 
+}
+
+.top-header-list {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+	display: flex;
+	flex-wrap: wrap; 
+}
+.top-header-list li {
+	margin-right: 30px;
+	font-size: 14px; 
+}
+.top-header-list li:last-child {
+    margin-right: 0; 
+}
+.top-header-list li i {
+    margin-right: 10px; 
+}
+
+.top-header a{
+    padding-bottom: 2px;
+    overflow: hidden;
+    color: #ffffff;
+}
+
+.top-header  .top-social {
+	font-size: 16px;
+	height: 40px;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: flex-end;
+	align-items: center;
+	transition: all 0.4s ease;
+	color: #ffffff;
+	text-align: center;
+}
+
+.top-social a{
+    color: #000000;
+    padding: 4px;
+}
+
+@media screen and (max-width: 991px){
+    .top-header {
+        display: block;
+    }
+}
+
+.text-center img {
+    width: 90px;
 }
 #header .logo, ul.menus li a, #header.fixedwrap ul.menus li.has-child a:hover:after, #header.fixedwrap ul.menus li.open a:after, #header.fixedwrap .sb-icon-search, #header.fixedwrap .sb-search-submit {
     -webkit-transition: all 0.6s ease 0s;
@@ -321,7 +386,7 @@ form input:focus, form textarea:focus {
     display: none;
 }
 #slide-buttons {
-    background-color: #0097a7;
+    background-color: #2d186b;
     border-radius: 50%;
     color: #ffffff;
     height: 40px;
@@ -338,7 +403,7 @@ form input:focus, form textarea:focus {
 .c-menu {
     position: fixed;
     z-index: 200;
-    background-color: #0097a7;
+    background-color: #2d186b;
     -webkit-transition: -webkit-transform 0.3s;
     transition: transform 0.3s;
 }
@@ -374,7 +439,7 @@ form input:focus, form textarea:focus {
     margin-right: 10px !Important;
     background-color: #ffffff;
     border-radius: 50%;
-    color: #0097a7;
+    color: #2d186b;
     height: 40px;
     width: 40px;
     line-height: 46px;
@@ -670,6 +735,7 @@ ul.menus li.has-child ul.child li a:after, ul.menus li.has-child ul.child li a:h
 .heading-block h2 {
     margin-bottom: 5px;
 }
+
 .heading-block h4.tagline {
     color: #999999;
 }
